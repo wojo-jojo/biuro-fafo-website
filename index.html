@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biuro Fafo</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        <ul>
+          <li>Od poniedziałku do piątku 7:00 - 15:00</li>
+          <li class="phone">tel.: 987 654 321</li>
+          <li class="mail">email: fafo@example.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="container clearfix">
+        <a href="index.html">
+          <div class="logo">
+            <img src="images/dog-paw.svg" alt="Logo Fafo">
+            <p>
+              <span class="company-name">Fafo</span>
+              <span class="start-newline">Biuro rachunkowe</span>
+            </p>
+          </div>
+        </a>
+
+        <nav>
+          <p class="close">✖</p>
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="offer.html">Oferta</a></li>
+            <li><a href="#">Linki</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <svg class="menu" viewBox="0 0 100 80"><rect width="100" height="20"></rect><rect y="30" width="100" height="20"></rect><rect y="60" width="100" height="20"></rect></svg>
+
+
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container slide-in-left">
+      <h1>Biuro rachunkowe Fafo</h1>
+      <p>Nasze biuro zapewnia wszechstronną obsługę księgową w każdej formie prawnej i księgowej.</p>
+      <p>Oferujemy również pomoc w zakładaniu firmy, obsługę kadr oraz psie sztuczki.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="offer-showcase container clearfix">
+      <h2>Zapoznaj się z naszą ofertą:</h2>
+      <ul class="clearfix">
+        <li class="col-md-6 col-lg-3">
+          <div class="service">
+            <div>
+              <img src="images/accounting.svg" alt="Rozliczenia ikona">
+              <h3>Usługi księgowe</h3>
+            </div>
+            <div class="service-overlay">
+              <h3>Usługi księgowe</h3>
+              <p>Pełna obługa księgowa</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-6 col-lg-3">
+          <div class="service">
+            <div>
+              <img src="images/translate.svg" alt="Tłumaczenia ikona">
+              <h3>Tłumaczenia</h3>
+            </div>
+            <div class="service-overlay">
+              <h3>Tłumaczenia</h3>
+              <p>12 różnych języków</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-6 col-lg-3">
+          <div class="service">
+            <div>
+              <img src="images/world.svg" alt="Zwrot podatku ikona">
+              <h3>Zwrot podatku z zagranicy</h3>
+            </div>
+            <div class="service-overlay">
+              <h3>Zwrot podatku z zagranicy</h3>
+              <p>Korzystne rozliczenia podatkowe</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-6 col-lg-3">
+          <div class="service">
+            <div>
+              <img src="images/circle.svg" alt="Kółko ikona">
+              <h3>Bieg za rzuconym kółkiem</h3>
+            </div>
+            <div class="service-overlay">
+              <h3>Bieg za rzuconym kółkiem</h3>
+              <p>Nawet do 3 razy</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <a class="button" href="offer.html">Zobacz ofertę</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container clearfix">
+      <div class="contact col-md-6">
+        <div class="logo">
+          <p>
+            <span class="company-name">Fafo</span>
+            <span class="start-newline">Biuro rachunkowe</span>
+          </p>
+        </div>
+        <p class="address">
+          ul. Faficza 42<br>
+          33-658 Fafikowo
+        </p>
+        <p class="phone">tel.: 987 654 321</p>
+        <p class="mail">email: fafo@example.com</p>
+      </div>
+      <div class="google-map col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16386025.939024633!2d-28.254400899999947!3d59.911442900000026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e5f4de00007%3A0xd018679f59c977c8!2sThe%20Fafo%20Institute%20for%20Labour%20and%20Social%20Research!5e0!3m2!1spl!2spl!4v1691759157929!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="disclaimer">Korzystanie z usług biura jest równoznaczne z wyrażeniem zgody na przetwarzanie danych osobowych stosownie do  przepisów Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych (rozporządzenie o ochronie danych zwane RODO)</p>
+    </footer>
+    </div>
+
+
+  <script>
+    const menu = document.querySelector(".menu")
+    const close = document.querySelector(".close")
+    const nav = document.querySelector("nav")
+
+    menu.addEventListener("click", () => {
+      nav.classList.add("open-nav")
+    })
+
+    close.addEventListener("click", () => {
+      nav.classList.remove("open-nav")
+    })
+  </script>
+</body>
+</html>
