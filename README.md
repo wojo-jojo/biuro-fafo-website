@@ -9,3 +9,8 @@ Features
 Technologies
 * HTML5
 * CSS3
+
+## Live Demo
+
+You can view the live version of the site here:  
+[https://wojo-jojo.github.io/biuro-fafo-website](https://wojo-jojo.github.io/biuro-fafo-website)
